@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, type FormEvent } from 'react'
+import { useRouter } from 'next/navigation'
 import { Mail, MapPin, Phone, Send } from 'lucide-react'
 import {
   GithubIcon,
@@ -9,6 +10,8 @@ import {
   InstagramIcon,
   WhatsAppIcon,
 } from '@/components/brand-icons'
+
+const FORM_ENDPOINT = 'https://formspree.io/f/mgojynqq'
 
 const findMe = [
   {
@@ -44,7 +47,41 @@ const findMe = [
 ]
 
 export function Contact() {
+  const router = useRouter()
   const [sent, setSent] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [loading, setLoading] = useState(false)
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    setLoading(true)
+    setError(null)
+
+    const form = event.currentTarget
+    const formData = new FormData(form)
+
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+
+      if (!response.ok) {
+        throw new Error('Server error')
+      }
+
+      setSent(true)
+      form.reset()
+      router.push('/thank-you')
+    } catch (err) {
+      setError('Unable to send message. Please try again later.')
+    } finally {
+      setLoading(false)
+    }
+  }
 
   return (
     <section
@@ -63,16 +100,14 @@ export function Contact() {
 
             <form
               className="mt-6 space-y-4"
-              onSubmit={(e) => {
-                e.preventDefault()
-                setSent(true)
-                e.currentTarget.reset()
-                setTimeout(() => setSent(false), 4000)
-              }}
+              onSubmit={handleSubmit}
             >
+              <input type="hidden" name="_subject" value="New message from portfolio site" />
+              <input type="hidden" name="_captcha" value="false" />
               <div className="grid gap-4 sm:grid-cols-2">
                 <input
                   required
+                  name="name"
                   type="text"
                   placeholder="Your Name"
                   aria-label="Your Name"
@@ -80,6 +115,7 @@ export function Contact() {
                 />
                 <input
                   required
+                  name="email"
                   type="email"
                   placeholder="Your Email"
                   aria-label="Your Email"
@@ -88,6 +124,7 @@ export function Contact() {
               </div>
               <input
                 required
+                name="subject"
                 type="text"
                 placeholder="Subject"
                 aria-label="Subject"
@@ -95,17 +132,29 @@ export function Contact() {
               />
               <textarea
                 required
+                name="message"
                 rows={4}
                 placeholder="Your Message"
                 aria-label="Your Message"
                 className="w-full resize-none rounded-lg border border-border bg-background/60 px-4 py-3 text-sm outline-none focus:border-[color:var(--accent-blue)]"
               />
+              {error && (
+                <p className="rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-700">
+                  {error}
+                </p>
+              )}
+              {sent && (
+                <p className="rounded-lg border border-emerald-300 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">
+                  Your message was sent successfully!
+                </p>
+              )}
               <div className="grid gap-3 sm:grid-cols-2">
                 <button
                   type="submit"
-                  className="inline-flex h-12 items-center justify-center gap-2 rounded-lg gradient-bg px-6 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition-transform hover:-translate-y-0.5"
+                  disabled={loading}
+                  className="inline-flex h-12 items-center justify-center gap-2 rounded-lg gradient-bg px-6 text-sm font-semibold text-white shadow-lg shadow-primary/30 transition-transform hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60"
                 >
-                  {sent ? 'Message Sent!' : 'Send Message'}
+                  {loading ? 'Sending...' : 'Send Message'}
                   <Send className="size-4" />
                 </button>
                 <a
