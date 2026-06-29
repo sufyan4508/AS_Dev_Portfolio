@@ -66,6 +66,7 @@ export const projects: Project[] = [
       'Smart recall, task tracking and admin management',
     ],
     tech: ['React', 'Firebase', 'Node API', 'Tailwind CSS', 'Vercel', 'Render'],
+    github: '#',
     demo: 'https://echo-frame-plus.vercel.app/',
   },
   {
@@ -140,9 +141,15 @@ export const projects: Project[] = [
     category: 'web',
     categoryLabel: 'Web',
     image: '/projects/portfolio-website.png',
-    description: 'Personal portfolio website built with React.',
-    tech: ['React', 'Tailwind', 'Framer Motion'],
-    demo: '#',
+    description: 'Personal portfolio website built with Next.js and modern technologies.',
+  features: [
+    'Showcases professional skills and expertise',
+    'Displays completed and ongoing projects with details',
+    'Includes developer information and contact options',
+  ],
+    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'next-themes', 'Vercel'],
+    github: 'https://github.com/sufyan4508/AS_Dev_Portfolio',
+    demo: 'https://as-dev-portfolioo.vercel.app/',
   },
 ]
 
