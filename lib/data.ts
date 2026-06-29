@@ -75,6 +75,11 @@ export const projects: Project[] = [
     categoryLabel: 'Web',
     image: '/projects/admin-dashboard.png',
     description: 'Analytics dashboard built with the MERN stack.',
+    features: [
+      'Secure JWT User Authentication and role-based authorization',
+      'Interactive real-time data visualization and analytics charts',
+      'Advanced dynamic database management with full CRUD operations',
+    ],
     tech: ['React', 'Node', 'Express', 'MongoDB'],
     github: 'https://github.com/sufyan4508/echoframe_backend',
     demo: 'https://echo-frame-plus.vercel.app/dashboard',
