@@ -66,7 +66,7 @@ export const projects: Project[] = [
       'Smart recall, task tracking and admin management',
     ],
     tech: ['React', 'Firebase', 'Node API', 'Tailwind CSS', 'Vercel', 'Render'],
-    github: '#',
+    github: 'https://github.com/sufyan4508/echoframe_frontend',
     demo: 'https://echo-frame-plus.vercel.app/',
   },
   {
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     image: '/projects/admin-dashboard.png',
     description: 'Analytics dashboard built with the MERN stack.',
     tech: ['React', 'Node', 'Express', 'MongoDB'],
-    github: '#',
+    github: 'https://github.com/sufyan4508/echoframe_backend',
     demo: 'https://echo-frame-plus.vercel.app/dashboard',
   },
   {
