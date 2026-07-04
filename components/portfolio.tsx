@@ -44,8 +44,8 @@ export function Portfolio() {
           ))}
         </div>
 
-        {/* Projects Grid */}
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Projects Grid - Items stretch added to make all cards equal height */}
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
           {filtered.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
@@ -68,8 +68,9 @@ export function Portfolio() {
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="glass group overflow-hidden rounded-2xl transition-all hover:-translate-y-1 hover:border-[color:var(--accent-blue)]">
-      <div className="relative aspect-[4/3] overflow-hidden">
+    /* Card Main Container: added 'flex flex-col h-full' to allow flex alignment */
+    <div className="glass group overflow-hidden rounded-2xl transition-all hover:-translate-y-1 hover:border-[color:var(--accent-blue)] flex flex-col h-full">
+      <div className="relative aspect-[4/3] overflow-hidden shrink-0">
         <Image
           src={project.image || '/placeholder.svg'}
           alt={`${project.title} preview`}
@@ -82,13 +83,14 @@ function ProjectCard({ project }: { project: Project }) {
         </span>
       </div>
 
-      <div className="p-5">
+      {/* Card Body: added 'flex flex-col flex-grow' to push the footer down */}
+      <div className="p-5 flex flex-col flex-grow">
         <h3 className="font-semibold">{project.title}</h3>
         <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
           {project.description}
         </p>
 
-        <div className="mt-3 flex flex-wrap gap-1.5">
+        <div className="mt-3 flex flex-wrap gap-1.5 mb-4">
           {project.features && (
             <ul className="mb-2 w-full space-y-1 text-xs text-muted-foreground">
               {project.features.map((feature) => (
@@ -109,7 +111,8 @@ function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
 
-        <div className="mt-4 flex items-center gap-4 border-t border-border pt-4 text-sm">
+        {/* Action Buttons: added 'mt-auto' so it always sticks to the very bottom */}
+        <div className="mt-auto flex items-center gap-4 border-t border-border pt-4 text-sm">
           {project.demo && (
             <a
               href={project.demo}

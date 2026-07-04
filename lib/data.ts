@@ -103,23 +103,21 @@ export const projects: Project[] = [
     tech: ['Illustrator', 'Photoshop'],
     demo: '#',
   },
-
-   {
+  {
     title: 'Poetry Website',
     category: 'web',
     categoryLabel: 'Web',
     image: '/projects/Ahl.e.Sukhan.png',
-    description: 'Personal poetry plateform of Sufyan with 100+ different Poets,into multiple different Languages with modern features.',
-  features: [
-    'Showcase the poetry of 100+ poets and there Bioghraphy.',
-    'Displays complete and ongoing Features of site with details.',
-    'Includes Auther/developer poet information and his potery also.',
-  ],
+    description: 'Personal poetry platform of Sufyan with 100+ different Poets, into multiple different Languages with modern features.',
+    features: [
+      'Showcase the poetry of 100+ poets and their Biography.',
+      'Displays complete and ongoing Features of site with details.',
+      'Includes Author/developer poet information and his poetry also.',
+    ],
     tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'next-themes', 'Vercel'],
     github: 'https://github.com/sufyan4508/PoertySite',
     demo: 'https://poetrywithsufyan.vercel.app/',
   },
-
   {
     title: 'Social Media Post',
     category: 'graphics',
@@ -129,7 +127,6 @@ export const projects: Project[] = [
     tech: ['Illustrator', 'Photoshop'],
     demo: '#',
   },
-
   {
     title: 'Task Manager App',
     category: 'flutter',
@@ -140,7 +137,6 @@ export const projects: Project[] = [
     github: '#',
     demo: '#',
   },
-
   {
     title: 'Fitness Tracker',
     category: 'flutter',
@@ -151,7 +147,6 @@ export const projects: Project[] = [
     github: '#',
     demo: '#',
   },
-
   {
     title: 'Logo Design',
     category: 'graphics',
@@ -167,11 +162,11 @@ export const projects: Project[] = [
     categoryLabel: 'Web',
     image: '/projects/portfolio-website.png',
     description: 'Personal portfolio website built with Next.js and modern technologies.',
-  features: [
-    'Showcases professional skills and expertise',
-    'Displays completed and ongoing projects with details',
-    'Includes developer information and contact options',
-  ],
+    features: [
+      'Showcases professional skills and expertise',
+      'Displays completed and ongoing projects with details',
+      'Includes developer information and contact options',
+    ],
     tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'next-themes', 'Vercel'],
     github: 'https://github.com/sufyan4508/AS_Dev_Portfolio',
     demo: 'https://as-dev-portfolioo.vercel.app/',
