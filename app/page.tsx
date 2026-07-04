@@ -2,10 +2,10 @@ import { Navbar } from '@/components/navbar'
 import { Hero } from '@/components/hero'
 import { About } from '@/components/about'
 import { Services } from '@/components/services'
-import { Portfolio } from '@/components/portfolio'
+import { Timeline } from '@/components/timeline'
 import { Skills } from '@/components/skills'
 import { Certificates } from '@/components/certificates'
-import { Timeline } from '@/components/timeline'
+import { Portfolio } from '@/components/portfolio'
 import { Contact } from '@/components/contact'
 import { Footer } from '@/components/footer'
 
@@ -17,10 +17,10 @@ export default function Page() {
         <Hero />
         <About />
         <Services />
-        <Portfolio />
+        <Timeline />
         <Skills />
         <Certificates />
-        <Timeline />
+        <Portfolio />
         <Contact />
       </main>
       <Footer />

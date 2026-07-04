@@ -47,7 +47,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-5 text-lg font-semibold sm:text-xl">
-            Full Stack Developer | Graphic Designer
+            IT-Graduate | Full Stack Developer | Graphic Designer
             <br />
             Flutter Learner | AI Enthusiast
           </p>

@@ -103,6 +103,23 @@ export const projects: Project[] = [
     tech: ['Illustrator', 'Photoshop'],
     demo: '#',
   },
+
+   {
+    title: 'Poetry Website',
+    category: 'web',
+    categoryLabel: 'Web',
+    image: '/projects/Ahl.e.Sukhan.png',
+    description: 'Personal poetry plateform of Sufyan with 100+ different Poets,into multiple different Languages with modern features.',
+  features: [
+    'Showcase the poetry of 100+ poets and there Bioghraphy.',
+    'Displays complete and ongoing Features of site with details.',
+    'Includes Auther/developer poet information and his potery also.',
+  ],
+    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'next-themes', 'Vercel'],
+    github: 'https://github.com/sufyan4508/PoertySite',
+    demo: 'https://poetrywithsufyan.vercel.app/',
+  },
+
   {
     title: 'Social Media Post',
     category: 'graphics',
@@ -112,6 +129,7 @@ export const projects: Project[] = [
     tech: ['Illustrator', 'Photoshop'],
     demo: '#',
   },
+
   {
     title: 'Task Manager App',
     category: 'flutter',
@@ -122,6 +140,7 @@ export const projects: Project[] = [
     github: '#',
     demo: '#',
   },
+
   {
     title: 'Fitness Tracker',
     category: 'flutter',
@@ -132,6 +151,7 @@ export const projects: Project[] = [
     github: '#',
     demo: '#',
   },
+
   {
     title: 'Logo Design',
     category: 'graphics',

@@ -14,9 +14,8 @@ export function About() {
               About Me
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
-              I&apos;m a passionate Full Stack Developer and Graphic Designer who
-              loves turning ideas into real-world digital products. I enjoy
-              writing clean code, designing user-friendly interfaces, and
+              I&apos;m an IT-Professional and strong passionate with Full Stack Web Developer and Graphic Designer who
+              loves turning ideas into real-world digital products. I enjoy writing clean code, designing user-friendly interfaces, and
               constantly learning new technologies.
             </p>
           </div>
