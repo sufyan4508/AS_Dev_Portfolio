@@ -67,7 +67,7 @@ export const projects: Project[] = [
     ],
     tech: ['React', 'Firebase', 'Node API', 'Tailwind CSS', 'Vercel', 'Render'],
     github: 'https://github.com/sufyan4508/echoframe_frontend',
-    demo: 'https://vercel.app',
+    demo: 'https://echoframe-frontend.vercel.app/',
   },
   {
     title: 'Admin Dashboard',
