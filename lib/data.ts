@@ -114,7 +114,7 @@ export const projects: Project[] = [
       'Displays complete and ongoing Features of site with details.',
       'Includes Author/developer poet information and his poetry also.',
     ],
-    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'next-themes', 'Vercel'],
+    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
     github: 'https://github.com/sufyan4508/PoertySite',
     demo: 'https://poetrywithsufyan.vercel.app/',
   },
