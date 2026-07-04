@@ -44,7 +44,7 @@ export function Portfolio() {
           ))}
         </div>
 
-        {/* Projects Grid - Items stretch added to make all cards equal height */}
+        {/* Projects Grid - Is div mein 'items-stretch' lagaya gaya hai */}
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4 items-stretch">
           {filtered.map((project) => (
             <ProjectCard key={project.title} project={project} />
@@ -68,9 +68,9 @@ export function Portfolio() {
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    /* Card Main Container: added 'flex flex-col h-full' to allow flex alignment */
-    <div className="glass group overflow-hidden rounded-2xl transition-all hover:-translate-y-1 hover:border-[color:var(--accent-blue)] flex flex-col h-full">
-      <div className="relative aspect-[4/3] overflow-hidden shrink-0">
+    /* Card Main Container: Is mein 'flex flex-col h-full relative' ka izaafa kiya gaya hai */
+    <div className="glass group overflow-hidden rounded-2xl transition-all hover:-translate-y-1 hover:border-[color:var(--accent-blue)] flex flex-col h-full relative">
+      <div className="relative aspect-[4/3] overflow-hidden flex-shrink-0">
         <Image
           src={project.image || '/placeholder.svg'}
           alt={`${project.title} preview`}
@@ -83,7 +83,7 @@ function ProjectCard({ project }: { project: Project }) {
         </span>
       </div>
 
-      {/* Card Body: added 'flex flex-col flex-grow' to push the footer down */}
+      {/* Content Area: Is mein 'flex flex-col flex-grow' lagaya gaya hai */}
       <div className="p-5 flex flex-col flex-grow">
         <h3 className="font-semibold">{project.title}</h3>
         <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
@@ -111,14 +111,14 @@ function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
 
-        {/* Action Buttons: added 'mt-auto' so it always sticks to the very bottom */}
-        <div className="mt-auto flex items-center gap-4 border-t border-border pt-4 text-sm">
+        {/* Action Buttons Footer: Is mein 'mt-auto relative z-10' lagaya gaya hai taake buttons niche rahein aur target="_blank" lagaya hai taake new tab mein links khulein */}
+        <div className="mt-auto flex items-center gap-4 border-t border-border pt-4 text-sm relative z-10">
           {project.demo && (
             <a
               href={project.demo}
               target={project.demo.startsWith('http') ? '_blank' : undefined}
               rel={project.demo.startsWith('http') ? 'noreferrer' : undefined}
-              className="inline-flex items-center gap-1.5 text-muted-foreground transition-colors hover:text-[color:var(--accent-blue)]"
+              className="inline-flex items-center gap-1.5 text-muted-foreground transition-colors hover:text-[color:var(--accent-blue)] cursor-pointer"
             >
               Live Demo <ExternalLink className="size-3.5" />
             </a>
@@ -128,7 +128,9 @@ function ProjectCard({ project }: { project: Project }) {
             <a
               href={project.github}
               aria-label={`${project.title} GitHub`}
-              className="ml-auto inline-flex items-center gap-1.5 text-muted-foreground transition-colors hover:text-foreground"
+              target={project.github.startsWith('http') ? '_blank' : undefined}
+              rel={project.github.startsWith('http') ? 'noreferrer' : undefined}
+              className="ml-auto inline-flex items-center gap-1.5 text-muted-foreground transition-colors hover:text-foreground cursor-pointer"
             >
               <GithubIcon className="size-4" />
             </a>

@@ -67,7 +67,7 @@ export const projects: Project[] = [
     ],
     tech: ['React', 'Firebase', 'Node API', 'Tailwind CSS', 'Vercel', 'Render'],
     github: 'https://github.com/sufyan4508/echoframe_frontend',
-    demo: 'https://echo-frame-plus.vercel.app/',
+    demo: 'https://vercel.app',
   },
   {
     title: 'Admin Dashboard',
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     ],
     tech: ['React', 'Node', 'Express', 'MongoDB'],
     github: 'https://github.com/sufyan4508/echoframe_backend',
-    demo: 'https://echo-frame-plus.vercel.app/dashboard',
+    demo: 'https://vercel.appdashboard',
   },
   {
     title: 'E-Commerce Store',
@@ -108,14 +108,14 @@ export const projects: Project[] = [
     category: 'web',
     categoryLabel: 'Web',
     image: '/projects/Ahl.e.Sukhan.png',
-    description: 'Personal poetry platform of Sufyan with 100+ different Poets, into multiple different Languages with modern features.',
+    description: 'AI Powered Urdu Poetry Platform - Personal poetry of Sufyan with 100+ different Poets.',
     features: [
       'Showcase the poetry of 100+ poets and their Biography.',
       'Displays complete and ongoing Features of site with details.',
       'Includes Author/developer poet information and his poetry also.',
     ],
-    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vercel'],
-    github: 'https://github.com/sufyan4508/PoertySite',
+    tech: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'next-themes', 'Vercel'],
+    github: 'https://github.com',
     demo: 'https://poetrywithsufyan.vercel.app/',
   },
   {
@@ -295,15 +295,8 @@ export const timeline: TimelineItem[] = [
   {
     year: '2022 – 2026',
     title: 'BS in Information Technology (BSIT)',
-    subtitle: 'National University Of Modern Languages(NUML).',
+    subtitle: 'National Uni',
     side: 'left',
-    type: 'education',
-  },
-  {
-    year: '2019 – 2021',
-    title: 'FSC (Pre-Engineering)',
-    subtitle: 'Government Post Graduate College Of Science, Faisalabad ',
-    side: 'right',
     type: 'education',
   },
 ]
