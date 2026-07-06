@@ -11,7 +11,7 @@ import {
 } from '@/components/brand-icons'
 
 const socials = [
-  { icon: WhatsAppIcon, label: 'WhatsApp', href: 'https://wa.me/923496283206' },
+  { icon: WhatsAppIcon, label: 'WhatsApp', href: 'https://wa.me/923427712630' },
   { icon: GithubIcon, label: 'GitHub', href: 'https://github.com/sufyan4508/' },
   { icon: LinkedinIcon, label: 'LinkedIn', href: 'https://www.linkedin.com/in/sufyan08/' },
   { icon: FacebookIcon, label: 'Facebook', href: 'https://www.facebook.com/areshzabi45/' },

@@ -169,7 +169,7 @@ export function Contact() {
               </div>
             </form>
 
-            <div className="mt-8 grid gap-3 text-sm text-muted-foreground sm:grid-cols-3">
+            <div className="mt-8 grid gap-3 text-sm text-muted-foreground sm:grid-cols-2">
               <a
                 href="mailto:abu.sufyan.tech630@gmail.com"
                 className="inline-flex items-center gap-2 transition-colors hover:text-[color:var(--accent-blue)]"
@@ -182,7 +182,7 @@ export function Contact() {
                 className="inline-flex items-center gap-2 transition-colors hover:text-[color:var(--accent-blue)]"
               >
                 <Phone className="size-4 text-[color:var(--accent-blue)]" />
-                +92 3496283206
+                +92 3427712630
               </a>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Faisalabad%2C%20Pakistan"
