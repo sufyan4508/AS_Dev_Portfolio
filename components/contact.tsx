@@ -17,8 +17,8 @@ const findMe = [
   {
     icon: WhatsAppIcon,
     label: 'WhatsApp',
-    value: '+92 3496283206',
-    href: 'https://wa.me/923496283206',
+    value: '+92 3427712630',
+    href: 'https://wa.me/923427712630',
   },
   {
     icon: GithubIcon,
@@ -158,7 +158,7 @@ export function Contact() {
                   <Send className="size-4" />
                 </button>
                 <a
-                  href="https://wa.me/923496283206"
+                  href="https://wa.me/923427712630"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex h-12 items-center justify-center gap-2 rounded-lg bg-[#25D366] px-6 text-sm font-semibold text-white shadow-lg shadow-[#25D366]/25 transition-transform hover:-translate-y-0.5 hover:bg-[#1ebe5d]"
@@ -171,14 +171,14 @@ export function Contact() {
 
             <div className="mt-8 grid gap-3 text-sm text-muted-foreground sm:grid-cols-3">
               <a
-                href="mailto:sufisaab098@gmail.com"
+                href="mailto:abu.sufyan.tech630@gmail.com"
                 className="inline-flex items-center gap-2 transition-colors hover:text-[color:var(--accent-blue)]"
               >
                 <Mail className="size-4 text-[color:var(--accent-blue)]" />
-                sufisaab098@gmail.com
+                abu.sufyan.tech630@gmail.com
               </a>
               <a
-                href="tel:+923496283206"
+                href="tel:+923427712630"
                 className="inline-flex items-center gap-2 transition-colors hover:text-[color:var(--accent-blue)]"
               >
                 <Phone className="size-4 text-[color:var(--accent-blue)]" />
