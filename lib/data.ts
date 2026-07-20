@@ -124,7 +124,7 @@ export const projects: Project[] = [
     category: 'web',
     categoryLabel: 'Web',
     image: '/KidSprout Layout.png',
-    description: 'An ultra-premium, high-performance educational gaming platform inspired by Apple App Store sidebar UX, exclusively dedicated to Muhammad Haris for childhood cognitive scalability.',
+    description: 'An ultra-premium, high-performance educational gaming platform inspired by Apple App Store sidebar UX.',
     features: [
       'Apple-Style UX Shell with Adaptive Light/Dark Mode Controller.',
       'Native Math Ninja Engine with Real-Time Typing Accuracy Tracking.',
