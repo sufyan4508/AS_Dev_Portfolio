@@ -118,6 +118,23 @@ export const projects: Project[] = [
     github: 'https://github.com/sufyan4508/PoetrySite/',
     demo: 'https://poetrywithsufyan.vercel.app/',
   },
+
+  {
+    title: 'KidSprout-Gaming Website',
+    category: 'web',
+    categoryLabel: 'Web',
+    image: '/KidSprout Layout.png',
+    description: 'An ultra-premium, high-performance educational gaming platform inspired by Apple App Store sidebar UX, exclusively dedicated to Muhammad Haris for childhood cognitive scalability.',
+    features: [
+      'Apple-Style UX Shell with Adaptive Light/Dark Mode Controller.',
+      'Native Math Ninja Engine with Real-Time Typing Accuracy Tracking.',
+      'Ads-Free Self-Hosting Architecture ensuring Lightning Fast 0ms Latency.'
+    ],
+    tech: ['Next.js 16', 'React 19', 'TypeScript', 'Tailwind CSS v4', 'Framer Motion', 'Lucide Icons', 'Vercel'],
+    github: 'https://github.com/sufyan4508/KidSprout-Games/',
+    demo: 'https://kid-sprout-games.vercel.app/',
+  },
+
   {
     title: 'Social Media Post',
     category: 'graphics',
