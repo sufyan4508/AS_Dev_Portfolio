@@ -123,7 +123,7 @@ export const projects: Project[] = [
     title: 'KidSprout-Gaming Website',
     category: 'web',
     categoryLabel: 'Web',
-    image: '/KidSprout Layout.png',
+    image: '/projects/KidSprout Layout.png',
     description: 'An ultra-premium, high-performance educational gaming platform inspired by Apple App Store sidebar UX.',
     features: [
       'Apple-Style UX Shell with Adaptive Light/Dark Mode Controller.',
