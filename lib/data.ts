@@ -312,7 +312,7 @@ export const timeline: TimelineItem[] = [
   {
     year: '2019 – 2021',
     title: 'Intermediate (Pre-Engineering)',
-    subtitle: 'National Uni',
+    subtitle: 'Govt.Post Graduate Collage OF Scince,Samnabad(Faisalabad)', 
     side: 'right',
     type: 'education',
   },
@@ -333,7 +333,7 @@ export const timeline: TimelineItem[] = [
   {
     year: '2022 – 2026',
     title: 'BS in Information Technology (BSIT)',
-    subtitle: 'National Uni',
+    subtitle: 'National University of Modern Languages (NUML)', 
     side: 'left',
     type: 'education',
   },
