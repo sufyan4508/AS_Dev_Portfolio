@@ -310,6 +310,13 @@ export type TimelineItem = {
 
 export const timeline: TimelineItem[] = [
   {
+    year: '2019 – 2021',
+    title: 'Intermediate (Pre-Engineering)',
+    subtitle: 'National Uni',
+    side: 'right',
+    type: 'education',
+  },
+  {
     year: '2024 – Present',
     title: 'Freelance Full Stack Developer',
     subtitle: 'Building web applications for clients using the MERN stack.',
