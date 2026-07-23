@@ -225,7 +225,8 @@ export const skillGroups: SkillGroup[] = [
       { name: 'MySQL', level: 88 },
       { name: 'PostgreSQL', level: 90 },
       { name: 'Firebase', level: 85 },
-      { name: 'Subabase', level: 88 },
+      { name: 'Supabase', level: 88 },
+      { name: 'Mongo DB', level: 85 },
     ],
   },
   {
