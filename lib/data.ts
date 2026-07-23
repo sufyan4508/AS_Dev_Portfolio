@@ -204,6 +204,7 @@ export const skillGroups: SkillGroup[] = [
       { name: 'CSS3', level: 90 },
       { name: 'Tailwind CSS', level: 88 },
       { name: 'JavaScript', level: 85 },
+      { name: 'Vite', level: 85 },
     ],
   },
   {
@@ -212,6 +213,7 @@ export const skillGroups: SkillGroup[] = [
       { name: 'Node.js', level: 85 },
       { name: 'Express.js', level: 82 },
       { name: 'Next.js', level: 88 },
+      { name: 'TypeScript', level: 85 },
       { name: 'REST API', level: 80 },
       { name: 'Firebase', level: 85 },
     ],
@@ -221,8 +223,9 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       { name: 'SQL', level: 80 },
       { name: 'MySQL', level: 88 },
+      { name: 'PostgreSQL', level: 90 },
       { name: 'Firebase', level: 85 },
-      { name: 'PostgreSQL', level: 86 },
+      { name: 'Subabase', level: 88 },
     ],
   },
   {
