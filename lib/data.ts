@@ -196,6 +196,19 @@ export type SkillGroup = {
 }
 
 export const skillGroups: SkillGroup[] = [
+   {
+    category: 'Tools',
+    skills: [
+      { name: 'Git & GitHub', level: 98 },
+      { name: 'VS Code', level: 95 },
+      { name: 'Android Studio', level: 80 },
+      { name: 'Vercel', level: 90 },
+      { name: 'Render', level: 80 },
+      { name: 'Railway', level: 85 },
+      { name: 'Docker', level: 80 },
+      { name: 'Jira ', level: 70 },
+    ],
+  },
   {
     category: 'Frontend',
     skills: [
@@ -229,33 +242,20 @@ export const skillGroups: SkillGroup[] = [
       { name: 'Mongo DB', level: 85 },
     ],
   },
-  {
-    category: 'App Developement',
-    skills: [
-      { name: 'Flutter', level: 70 },
-      { name: 'Dart', level: 70 },
-    ],
-  },
-  {
-    category: 'Tools',
-    skills: [
-      { name: 'Git & GitHub', level: 98 },
-      { name: 'VS Code', level: 95 },
-      { name: 'Android Studio', level: 80 },
-      { name: 'Vercel', level: 90 },
-      { name: 'Render', level: 80 },
-      { name: 'Railway', level: 85 },
-      { name: 'Docker', level: 80 },
-      { name: 'Jira ', level: 70 },
-    ],
-  },
-  {
+   {
     category: 'Design',
     skills: [
       { name: 'Adobe Photoshop', level: 88 },
       { name: 'Adobe Illustrator', level: 85 },
       { name: 'Canva', level: 92 },
       { name: 'UI/UX Design', level: 80 },
+    ],
+  },
+  {
+    category: 'App Developement',
+    skills: [
+      { name: 'Flutter', level: 70 },
+      { name: 'Dart', level: 70 },
     ],
   },
 ]
