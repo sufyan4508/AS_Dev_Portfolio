@@ -7,7 +7,8 @@ export function Skills() {
       <div className="mx-auto max-w-7xl">
         <SectionHeading eyebrow="What I Know" title="My Skills" />
 
-        <div className="glass mt-10 grid gap-8 rounded-3xl p-6 sm:p-10 md:grid-cols-2 xl:grid-cols-6">
+        <div className="glass mt-10 grid gap-8 rounded-3xl p-6 sm:p-10 md:grid-cols-3">
+
           {skillGroups.map((group) => (
             <div key={group.category}>
               <h3 className="mb-4 font-semibold text-[color:var(--accent-blue)]">
