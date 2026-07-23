@@ -230,6 +230,13 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
+    category: 'App Developement',
+    skills: [
+      { name: 'Flutter', level: 70 },
+      { name: 'Dart', level: 70 },
+    ],
+  },
+  {
     category: 'Tools',
     skills: [
       { name: 'Git & GitHub', level: 98 },
